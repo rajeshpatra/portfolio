@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="my_style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="font-awesome.min.css"> -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+	<nav class="navbar navbar-default navbar-fixed-top" id="navbar-example">
+		<div class="container-fluid col-md-8 col-md-offset-2">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"><img src="" alt="Brand"></a>
+			</div>
+			<div>
+				<ul class="nav navbar-nav navbar-right">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact_me">Contact Me</a></li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class=row>
+			<div> <!-- provide the class here -->
+				<div class="jumbotron parallax1" id="home">
+					<h1>Lorem Ipsum</h1>
+					<p>Hello, World!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<button class="btn btn-primary">Say Hello!</button>
+				</div>
+				<!-- <div class="parallax1">
+					
+				</div> -->
+				<!-- <div style="height: 300px; background-color: cyan; font-size: 20px">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div> -->
+				<div id="portfolio" class="parallax2">
+					
+				</div>
+				<div id="contact_me" class="parallax3">
+					
+				</div>
+				<div style="background-color: #F5F2DE; height: 100px">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+				<div style="background-color: #CFD9D6; height: 200px">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>	
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">Design and Created by #rzs.</p>
+			</div>
+
+			<i class="fa fa-camera-retro"></i>
+			<span class="fa fa-facebook"></span>
+		</footer>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('[data-spy="scroll"').each(function () {
+				var $spy = $(this).scrollspy('refresh')
+			});
+
+			$("#home").click(function (e) {
+				e.preventDefault()
+				$(this).tab("show")
+			});
+			$("#portfolio").click(function (e) {
+				e.preventDefault()
+				$(this).tab("show")
+			});
+			$("#contact_me").click(function (e) {
+				e.preventDefault()
+				$(this).tab("show")
+			});
+		});
+	</script>
+</body>
+</html>
