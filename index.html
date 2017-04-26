@@ -3,35 +3,37 @@
 <head>
 	<title>Personal Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="my_style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/my_style.css">
 	<!-- <link rel="stylesheet" type="text/css" href="font-awesome.min.css"> -->
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="bootstrap.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
 
 	<nav class="navbar navbar-default navbar-fixed-top" id="navbar-example">
 		<div class="container-fluid col-md-8 col-md-offset-2">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#"><img src="" alt="Brand"></a>
-			</div>
-			<div>
-				<ul class="nav navbar-nav navbar-right">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact_me">Contact Me</a></li>
-			</ul>
-			</div>
+			<div class="row">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html"><img src="" alt="my_logo"></a>
+				</div>	
+				<div>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact_me">Contact Me</a></li>
+					</ul>
+				</div>
+			</div>	
 		</div>
 	</nav>
 
 	<div class="container-fluid">
 		<div class=row>
 			<div> <!-- provide the class here -->
-				<div class="jumbotron parallax1" id="home">
+				<div class="jumbotron parallax1" id="home" style="background-image: url('assets/images/img1.jpg')">
 					<h1>Lorem Ipsum</h1>
 					<p>Hello, World!</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -41,7 +43,10 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-					<button class="btn btn-primary">Say Hello!</button>
+					<button class="btn btn-primary">Github</button>
+					<button class="btn btn-primary">LinkedIn</button>
+					<button class="btn btn-primary">FCC</button>
+					<button class="btn btn-primary">Facebook</button>
 				</div>
 				<!-- <div class="parallax1">
 					
@@ -54,37 +59,126 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div> -->
-				<div id="portfolio" class="parallax2">
-					
+				<div id="portfolio" class="parallax2" style="background-image: url('assets/images/img2.jpg')">
+					<div class="container-fluid">
+						<h1 class="text-center" style="margin-top: 55px; padding: 5px; color: cyan">Portfolios</h1>
+						<div class="row text-center" style="margin-top: 30px;">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<a href="#"><img class="image-responsive ph" src="assets/images/ph.jpg" alt="A"></a>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<a href="#"><img class="image-responsive ph" src="assets/images/ph.jpg" alt="B"></a>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<a href="#"><img class="image-responsive ph" src="assets/images/ph.jpg" alt="C"></a>
+								</div>		
+							</div>
+							<div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 30px;">
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<a href="#"><img class="image-responsive ph" src="assets/images/ph.jpg" alt="C"></a>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<a href="#"><img class="image-responsive ph" src="assets/images/ph.jpg" alt="D"></a>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<a href="#"><img class="image-responsive ph" src="assets/images/ph.jpg" alt="C"></a>
+								</div>
+							</div>
+							<!-- <div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img class="image-responsive ph" src="ph.jpg" alt="C">
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img class="image-responsive ph" src="ph.jpg" alt="C">
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img class="image-responsive ph" src="ph.jpg" alt="D">
+								</div>
+							</div> -->
+						</div>	
+					</div>
 				</div>
-				<div id="contact_me" class="parallax3">
-					
-				</div>
-				<div style="background-color: #F5F2DE; height: 100px">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
-				<div style="background-color: #CFD9D6; height: 200px">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div id="contact_me" class="parallax3" style="background-image: url('assets/images/img3.png')">
+					<div class="container">
+						<h1 class="text-center" style="color:cyan; margin-top: 35px; padding: 5px;">Love to Listen your Idea!</h1>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-md-offset-1" style="margin-top:30px;">
+							<div class="col-md-5 col-xs-6 col-sm-6" style="border-right: thin solid white;">
+								<form>
+									<div class="form-group">
+											<label for="name">Name</label>
+											<input type="text" class="form-control" placeholder="Your Name">
+									</div>
+									<div class="form-group">
+										<label for="email">Email</label>
+										<input type="email" class="form-control" placeholder="Youer Email">
+									</div>
+									<div class="form-group">
+										<label for="msg">Message</label>
+										<textarea class="form-control" rows="" placeholder="Your message goes here ..."></textarea>
+									</div>
+									<button class="btn btn-primary">Submit</button>
+								</form>
+							</div>
+							<div class="col-md-5 col-xs-6 col-sm-6" style="font-size:18px; color:white;">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>	
 		</div>
 		<footer class="footer">
-			<div class="container">
-				<p class="text-muted">Design and Created by #rzs.</p>
-			</div>
+			<div class="container" style="margin: 5px;">
+				<div class="col-md-4">
+					<h2>my_<span>logo</span></h2>
+					<p>
+						<a href="#">Home</a>
+						.
+						<a href="#">Blog</a>
+						.
+						<a href="#">About</a>
+						.
+						<a href="#">Faq</a>
+						.
+						<a href="#">Contact</a>
+					</p>
 
-			<i class="fa fa-camera-retro"></i>
-			<span class="fa fa-facebook"></span>
+					<p class="text-muted">Design and Created by <i>Lorem</i> &copy; 2107</p>
+				</div>
+				<div class="col-md-4 f">
+					<div>
+						<i class="fa fa-map-marker"></i>
+						<p><span>Bengaluru</span>, India</p>
+					</div>
+					<div>
+						<i class="fa fa-phone"></i>
+						<p style="font-size: 18px; font-weight: bold">+91 9040025447</p>
+					</div>
+					<div>
+						<i class="fa fa-envelope"></i>
+						<p><a href="mailto:p7.rajesh@gmail.com" style="font-size: 18px; font-weight: bold">p7.rajesh@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 f">
+					<p>
+						<span style="display: block; font-weight: bold; margin-top: 10px;">About the Lorem</span>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Connect with me through followings.
+					</p>
+					<div class="fa_logo" style="margin-left: -20px">
+						<a href="https://www.facebook.com/rajesh7.patra"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.twitter.com/rzs-in"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.linkedin.com/in/rajesh7patra/"><i class="fa fa-linkedin"></i></a>
+						<a href="https://www.github.com/rajeshpatra"><i class="fa fa-github" aria-hidden="true"></i></a>
+						<a href="https://www.freecodecamp.com/rajeshpatra"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
 

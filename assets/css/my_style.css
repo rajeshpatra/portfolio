@@ -13,7 +13,7 @@ body {
 
 	margin-bottom: 0px;
 
-	/*background-image: url();*/
+	background-image: url("assets/images/img1.jpg");
 
 	height: 700px;
 
@@ -26,7 +26,7 @@ body {
 }
 
 .parallax2 {
-	/*background-image: url("img2.jpg");*/
+	background-image: url("assets/images/img2.jpg");
 
 	height: 700px;
 
@@ -37,7 +37,7 @@ body {
 }
 
 .parallax3 {
-	/*background-image: url("img3.png");*/
+	background-image: url("assets/images/img3.png");
 
 	height: 470px;
 
